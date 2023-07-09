@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="icon" href="assets/img/logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>Nikojan: A Personal Website</title>
 </head>
 <body class="font-Poppins">
@@ -33,7 +35,7 @@
     </header>
 
     <section class="landing-section md:mx-10 mx-2 px-5">
-        <div class="fixed-socials md:absolute left-0 hidden md:grid grid-cols-1 space-y-10 px-4 py-3 bg-palette-200/50 rounded-r-lg mt-[100px]">
+        <div class="fixed-socials md:absolute left-0 hidden md:grid grid-cols-1 space-y-5 px-4 py-5 bg-palette-200/50 rounded-r-lg mt-[100px]">
             <a href="https://github.com/kibalias" target="_blank">
                 <iconify-icon icon="bi:github" width="35"></iconify-icon>
             </a>
@@ -52,8 +54,8 @@
                     a <span class="font-bold text-palette-300">computer science</span> student that has worked on multiple academic projects involving 
                     <span class="font-bold text-palette-300">user interfaces</span> & <span class="font-bold text-palette-300">front-end development</span>.
                 </div>
-                <div class="resume text-center pt-4 md:pr-24">
-                    <button class="bg-palette-200/50 hover:bg-palette-400 hover:border-palette-400 hover:text-white py-2 px-4 rounded-3xl border-2 border-palette-500 drop-shadow-md">
+                <div class="resume pt-4">
+                    <button class="bg-palette-200/50 hover:bg-palette-400 hover:border-palette-400 hover:text-white py-2 px-4 rounded-3xl border-2 border-palette-500 drop-shadow-md" id="resume-download-btn">
                         Download my Resume
                     </button>
                 </div>
@@ -67,51 +69,22 @@
     </section>
 
     <div class="about-placeholder bg-palette-500" id="about">
-        <section class="aboutMe-section grid md:grid-cols-12 grid-cols-1 gap-4 md:mx-10 mx-8 bg-palette-500 md:py-32 py-4 text-lg text-white">
-            <div class="left-side md:col-start-1 md:col-end-8 md:pl-20 md:pr-16 text-justify md:order-1 order-2">
-                <span class="font-bold text-palette-300">Performer, critical,</span> and <span class="font-bold text-palette-300">team player</span> on collaborative group projects tasked with leading and assisting building of <span class="font-bold text-palette-300">user interfaces</span> & <span class="font-bold text-palette-300">front-end development</span>, and assuring projects requirements are met and functional.
-    
-                <hr class="md:mt-8 mt-4">
-    
-                <div class="tech-stacks md:mt-8 mt-4">
-                    <h1 class="font-bold">Computer Languages and Frameworks</h1>
-                    <div class="tech-grid grid grid-cols-5 justify-items-center gap-y-3 mt-4">
-                        <iconify-icon icon="vscode-icons:file-type-html" width="60"></iconify-icon>
-                        <iconify-icon icon="vscode-icons:file-type-css" width="60"></iconify-icon>
-                        <iconify-icon icon="logos:javascript" width="60"></iconify-icon>
-                        <iconify-icon icon="devicon:tailwindcss" width="60"></iconify-icon>
-                        <iconify-icon icon="logos:bootstrap" width="60"></iconify-icon>
-                        <iconify-icon icon="logos:php" width="75"></iconify-icon>
-                        <iconify-icon icon="devicon:java" width="60"></iconify-icon>
-                        <iconify-icon icon="logos:python" width="60"></iconify-icon>
-                        <iconify-icon icon="logos:mysql" width="80"></iconify-icon>
-                        <iconify-icon icon="devicon:tensorflow" width="60"></iconify-icon>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="right-side md:col-start-9 md:col-span-3 md:order-2 order-1">
-                <div class="md:text-right text-center md:text-7xl text-4xl md:py-20">
-                    ABOUT ME
-                </div>
-            </div>
-        </section>
+        <!--Fill content using JQuery-->
     </div>
 
     <div class="portfolio-placeholder bg-white text-palette-500" id="portfolio">
-        <section class="portfolio-section md:mx-10 mx-8 md:py-20 py-4 text-lg">
-            <div class="px-20">
-                <div class="md:text-left text-center md:text-7xl text-4xl">
-                    PORTFOLIO
-                </div>
-            
-                <div class="right-side text-justify">
-                    text
-                </div>
-            </div>
-
-        </section>
+        <!--Fill content using JQuery-->
     </div>
+
+    <div class="contact-placeholder text-white bg-palette-500" id="contact">
+        <!--Fill content using JQuery-->
+    </div>
+    <div class="footer text-center py-2">
+       Copyright 2023. All Rights Reserved
+    </div>
+
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="src/js/load-pages.js"></script>
+    <script src="src/js/open-pdf.js"></script>
 </body>
 </html>
