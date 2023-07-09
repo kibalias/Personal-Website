@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
     <link rel="stylesheet" href="src/css/styles.css">
     <link rel="icon" href="assets/img/logo.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -16,25 +19,50 @@
             </ul>
         </div>
 
-        <div class="nav-links hidden md:block">
-            <ul class="flex gap-x-5">
-                <li class="font-semibold">
+        <div class="menu md:hidden block">
+            <iconify-icon id="menu-btn" icon="ion:menu" style="color: #ff942f;" width="50" class="cursor-pointer"></iconify-icon>
+
+        </div>
+        
+        <div id="mobile-menu" class="mobile-menu hidden top-0 right-0 z-10 bg-palette-200 pl-16 pt-2 pr-2 pb-8 rounded-bl-full ">
+            <div class="absolute z-20 top-0 right-0 pr-24 pt-2">
+                <iconify-icon id="close-btn" icon="ion:close" width="35" class="cursor-pointer"></iconify-icon>
+            </div>
+            <ul class="text-center">
+                <li class="font-semibold my-2">  
                     <a href="#landing-section">Home</a>
                 </li>
-                <li class="font-semibold">
+                <li class="font-semibold my-2">
                     <a href="#about">About</a>
                 </li>
-                <li class="font-semibold">
+                <li class="font-semibold my-2">
                     <a href="#portfolio">Portfolio</a>
                 </li>
-                <li class="font-semibold">
+                <li class="font-semibold my-2">
+                    <a href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-links hidden md:block">
+            <ul class="flex gap-x-5">
+                <li class="font-semibold my-2">
+                    <a href="#landing-section">Home</a>
+                </li>
+                <li class="font-semibold my-2">
+                    <a href="#about">About</a>
+                </li>
+                <li class="font-semibold my-2">
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li class="font-semibold my-2">
                     <a href="#contact">Contact Me</a>
                 </li>
             </ul>
         </div>
     </header>
 
-    <section class="landing-section md:mx-10 mx-2 px-5">
+    <section class="landing-section md:mx-10 mx-2 px-5 md:py-0 py-8">
         <div class="fixed-socials md:absolute left-0 hidden md:grid grid-cols-1 space-y-5 px-4 py-5 bg-palette-200/50 rounded-r-lg mt-[100px]">
             <a href="https://github.com/kibalias" target="_blank">
                 <iconify-icon icon="bi:github" width="35" class="scale-100 hover:scale-150 hover:rotate-45 ease-in duration-300"></iconify-icon>
