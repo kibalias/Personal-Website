@@ -12,3 +12,12 @@
     box-sizing: border-box;
     margin: 0;
   }
+
+
+.ui-project {
+    display: flex;
+}
+
+.proj-image {
+    flex: 1;
+}
