@@ -32,6 +32,8 @@ function loadWork(val){
     console.log(val);
     if(val == 1){
         window.open('src/templates/mafumafu-interface-design.html');
+    } else {
+        window.open('src/templates/misc/under-construction.html');
     }
     
 }
