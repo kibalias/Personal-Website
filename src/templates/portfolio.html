@@ -5,17 +5,20 @@
         </div>
     
         <div class="frontend-wrapper text-justify mt-4">
-            <h2 class="font-bold text-3xl">Frontend Development Projects</h2>
-            Working on it. . .
+            <h2 class="font-bold text-3xl text-left">Frontend Development Projects</h2>
+            <div class="wrapper-const font-Poppins w-full grid justify-items-center pt-4">
+                <iconify-icon icon="openmoji:construction" width="150"></iconify-icon>
+                <h1 class="text text-base text-brown-700">Under Construction. . .</h1>
+            </div>
         </div>
 
         <div class="ui-ux mt-4">
             <h2 class="font-bold text-3xl mb-4">UI/UX</h2>  
             <div class="ui-project">
                 <div class="proj-image">
-                    <img src="assets/img/mfmf-internship.png">
+                    <img src="assets/img/mfmf-internship.png" class="hover:scale-125 ease-in duration-300">
                 </div>
-                <div class="px-4 w-1/2">
+                <div class="proj-wrapper px-4 w-1/2">
                     <div class="proj-title text-2xl font-bold">
                         Mafumafu Website Design
                     </div>
@@ -32,15 +35,16 @@
 
             <div class="ui-project my-8">
                 <div class="proj-image order-2">
-                    <img src="assets/img/kemrie-internship.png">
+                    <img src="assets/img/kemrie-internship.png" class="hover:scale-125 ease-in duration-300">
                 </div>
-                <div class="px-4 w-1/2 order-1">
+                <div class="proj-wrapper px-4 w-1/2 order-1">
                     <div class="proj-title text-2xl font-bold">
                         Kemrie Website Design
                     </div>
                     <div class="proj-desc text-base mt-2 text-justify">
                         As part of the final output for our internship, our supervisor assigned us to create a UI/UX design for Kemrie Barcenas. <br><br>
-                        Unlike the former tasks, we have been given a color palette to work on. Regularly, feedbacks are given and the design is updated based from these.
+                        This is a work by pair and I spearheaded the utilization of technologies for this project and provided support in troubleshooting of the
+                        dependencies used. Unlike the former tasks, we have been given a color palette to work on. Regularly, feedbacks are given and the design is updated based from these.
                     </div>
                     <button id="btn-ui-proj" onclick="loadWork(this.value)" value="2" class="bg-blue-500 py-2 px-4 mt-4 rounded-2xl text-sm text-white hover:text-gray-100 hover:bg-blue-900">View the whole interface design</button>
                 </div>
@@ -49,10 +53,30 @@
             <hr class="w-full mt-8 border-2 border-yellow-600">
             
             <div class="ui-project my-8">
-                <div class="proj-image order-1">
+                <div class="proj-image order-1 flex gap-x-10">
+                    <img src="assets/img/i-cbb/start.png" class="w-1/3 h-auto hover:scale-125 ease-in duration-300">
+                    <img src="assets/img/i-cbb/main.png" class="w-1/3 h-auto hover:scale-125 ease-in duration-300"> 
+                </div>
+                <div class="proj-wrapper px-4 w-1/2 order-2">
+                    <div class="proj-title text-2xl font-bold">
+                        I-CBB: I See Bacterial Blight
+                        <h1 class="text-base font-semibold">Prototype for our Thesis</h1>
+                    </div>
+                    <div class="proj-desc text-base mt-2 text-justify">
+                        For our undergraduate study, we conducted a study on using machine learning and computer vision to detect probable bacterial blight infested cassava leaves. As such, we developed a mobile application that utilizes mobile camera or asks permission to access files to scan through cassava leaf images. <br><br>
+                        Proactively, I designed the initial interface of the mobile application.
+                    </div>
+                    <button id="btn-ui-proj" onclick="loadWork(this.value)" value="2" class="bg-blue-500 py-2 px-4 mt-4 rounded-2xl text-sm text-white hover:text-gray-100 hover:bg-blue-900">View the whole interface design</button>
+                </div>
+            </div>
+
+            <hr class="w-full mt-8 border-2 border-yellow-600">
+
+            <div class="ui-project my-8">
+                <div class="proj-image order-2">
                     <img src="assets/img/placeholder-image.png">
                 </div>
-                <div class="px-4 w-1/2 order-2">
+                <div class="proj-wrapper px-4 w-1/2 order-1">
                     <div class="proj-title text-2xl font-bold">
                         Lorem Ipsum
                     </div>
@@ -63,7 +87,6 @@
                     <button id="btn-ui-proj" onclick="loadWork(this.value)" value="2" class="bg-blue-500 py-2 px-4 mt-4 rounded-2xl text-sm text-white hover:text-gray-100 hover:bg-blue-900">View the whole interface design</button>
                 </div>
             </div>
-
 
         </div>
     </div>

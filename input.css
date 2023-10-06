@@ -13,9 +13,25 @@
     margin: 0;
   }
 
-
 .ui-project {
     display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    .ui-project {
+        display: block;
+    }
+    .proj-wrapper{
+        width: 100%;
+        margin-top: 1em;
+    }
+    .proj-image{
+        justify-content: center;
+    }
+
+    .right-side{
+        justify-content: center;
+    }
 }
 
 .proj-image {
