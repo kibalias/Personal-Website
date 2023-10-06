@@ -26,3 +26,12 @@ close_menu.addEventListener('click', function(){
     mobile_menu_placeholder.classList.add('hidden');
     mobile_menu_placeholder.classList.remove('absolute');
 });
+
+//load portfolio pages
+function loadWork(val){
+    console.log(val);
+    if(val == 1){
+        window.open('src/templates/mafumafu-interface-design.html');
+    }
+    
+}
