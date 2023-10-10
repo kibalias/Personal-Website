@@ -558,6 +558,10 @@ video {
   order: 2;
 }
 
+.col-span-3{
+  grid-column: span 3 / span 3;
+}
+
 .mx-2{
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -655,6 +659,10 @@ video {
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-cols-5{
@@ -814,6 +822,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -842,11 +855,6 @@ video {
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .pb-12{
@@ -918,11 +926,6 @@ video {
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .text-base{
@@ -1026,9 +1029,41 @@ video {
   display: flex;
 }
 
+.title {
+  text-align: center;
+  min-height: 100px;
+  max-height: 200px;
+}
+
+.title main-title{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.frontend-project {
+  background-color: #e7e7e7;
+  padding: 1rem;
+}
+
+.github {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.github :hover{
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
-  .ui-project {
+  .ui-project, .frontend-wrapper {
     display: block;
+  }
+
+  .frontend-project{
+    margin: 2rem 0rem 2rem 0rem;
   }
 
   .proj-wrapper{
@@ -1193,6 +1228,11 @@ video {
     padding-right: 0px;
   }
 
+  .md\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .md\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
@@ -1216,11 +1256,6 @@ video {
   .md\:py-32{
     padding-top: 8rem;
     padding-bottom: 8rem;
-  }
-
-  .md\:px-16{
-    padding-left: 4rem;
-    padding-right: 4rem;
   }
 
   .md\:pb-0{

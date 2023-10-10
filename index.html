@@ -75,7 +75,7 @@
         <div class="home-placeholder grid md:grid-cols-2 grid-cols-1 md:my-12">
             <div class="left-side md:col-start-1 md:col-end-8 md:pl-20 md:py-10 py-4 text-palette-500 text-lg md:text-left text-center md:order-1 order-2">
                 Hey there! I'm
-                <div class="name-intro md:text-7xl text-5xl font-bold py-4 ">
+                <div class="name-intro md:text-7xl text-4xl font-bold py-4 ">
                     < n i k o j a n >
                 </div>
                 <div class="md:pr-28 md:pt-3">
@@ -115,5 +115,16 @@
     <script src="src/js/load-pages.js"></script>
     <script src="src/js/expand-work.js"></script>
     <script src="src/js/open-pdf.js"></script>
+    <script>
+        var imageSources = ['assets/img/kemrie-web01.png', 'assets/img/kemrie-web02.png']
+        var index = 0;
+        setInterval (function(){
+            if(index == imageSources.length){
+                index = 0;
+            }
+            document.getElementById('kemrie').src = imageSources[index];
+            index++;
+        }, 2000)
+    </script>
 </body>
 </html>
