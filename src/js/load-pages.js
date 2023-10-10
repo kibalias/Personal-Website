@@ -35,5 +35,21 @@ function loadWork(val){
     } else {
         window.open('src/templates/misc/under-construction.html');
     }
-    
+}
+
+//redirect to github repository
+function redirect_to_github(d){
+    var val = d.getAttribute('data-value');
+    console.log(val);
+    if(val=='vetcares'){
+        window.open('https://github.com/kibalias/VetCares');
+    } else if(val=='kemrie'){
+        window.open('https://github.com/kibalias/Kemrie-Barcenas-Website');
+    } else if(val=='icbb'){
+        window.open('https://github.com/kibalias/I-CBB-App');
+    } else if(val=='pmms'){
+        window.open('https://github.com/kibalias/PMMS');
+    } else if(val=='alexandria'){
+        window.open('https://github.com/kibalias/Alexandria');
+    }
 }

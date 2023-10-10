@@ -17,9 +17,39 @@
     display: flex;
 }
 
+.title {
+    text-align: center;
+    min-height: 100px;
+    max-height: 200px;
+}
+
+.title main-title{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.frontend-project {
+    background-color: #e7e7e7;
+    padding: 1rem;
+}
+
+.github {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.github :hover{
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
-    .ui-project {
+    .ui-project, .frontend-wrapper {
         display: block;
+    }
+    .frontend-project{
+        margin: 2rem 0rem 2rem 0rem;
     }
     .proj-wrapper{
         width: 100%;
