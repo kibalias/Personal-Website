@@ -694,18 +694,18 @@ video {
        column-gap: 2.5rem;
 }
 
-.gap-x-5{
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
-}
-
-.gap-y-3{
-  row-gap: 0.75rem;
+.gap-x-2{
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
 }
 
 .gap-x-8{
   -moz-column-gap: 2rem;
        column-gap: 2rem;
+}
+
+.gap-y-3{
+  row-gap: 0.75rem;
 }
 
 .space-y-5 > :not([hidden]) ~ :not([hidden]){
@@ -1074,11 +1074,12 @@ video {
 
 .github {
   margin-top: 1em;
-  padding: 1rem;
+  padding: 10px;
   display: flex;
   justify-content: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
+  border-top: 2px solid #b8b8b8;
 }
 
 .github :hover{
@@ -1092,6 +1093,26 @@ video {
   border-radius: 50%;
   border: 2px solid #6B3706;
   box-shadow: 0 0 10px #757575;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.tech-stack h1 {
+  font-size: 12px;
+  margin-top: .5rem;
+  border: 2px solid #6B3706;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+}
+
+.tech-stack h1:hover {
+  border: 2px solid #c2650e;
+  background-color: #fcff627a;
 }
 
 @media only screen and (max-width: 600px) {
@@ -1119,6 +1140,26 @@ video {
 
 .proj-image {
   flex: 1;
+}
+
+.animate {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 2s;
+}
+
+.hid-left {
+  transform: translateX(-100%);
+}
+
+.hid-right {
+  transform: translateX(100%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
 .hover\:rotate-12:hover{

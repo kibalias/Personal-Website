@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="src/css/styles.css">
     <link rel="icon" href="assets/img/logo.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script defer src="src/js/animate.js"></script>
     <title>nikojan</title>
 </head>
 <body class="font-Poppins">
@@ -63,7 +64,7 @@
     </header>
 
     <section class="landing-section md:mx-10 mx-2 px-5 md:py-0 py-8">
-        <div class="fixed-socials md:absolute left-0 hidden md:grid grid-cols-1 space-y-5 px-4 py-5 bg-palette-200/50 rounded-r-lg mt-[100px]">
+        <div class="fixed-socials animate hid-left md:absolute left-0 hidden md:grid grid-cols-1 space-y-5 px-4 py-5 bg-palette-200/50 rounded-r-lg mt-[100px]">
             <a href="https://github.com/kibalias" target="_blank">
                 <iconify-icon icon="bi:github" width="35" class="scale-100 hover:scale-150 hover:rotate-45 ease-in duration-300"></iconify-icon>
             </a>
@@ -73,7 +74,7 @@
         </div>
 
         <div class="home-placeholder grid md:grid-cols-2 grid-cols-1 md:my-12">
-            <div class="left-side md:col-start-1 md:col-end-8 md:pl-20 md:py-10 py-4 text-palette-500 text-lg md:text-left text-center md:order-1 order-2">
+            <div class="left-side animate hid-left md:col-start-1 md:col-end-8 md:pl-20 md:py-10 py-4 text-palette-500 text-lg md:text-left text-center md:order-1 order-2">
                 Hey there! I'm
                 <div class="name-intro md:text-7xl text-4xl font-bold py-4 ">
                     < n i k o j a n >
@@ -89,22 +90,22 @@
                 </div>
             </div>
 
-            <div class="right-side grid md:col-start-9 md:col-end-12 md:pr-16 pb-4 md:pb-0 md:oder-2 order-1">
+            <div class="right-side animate hid-left grid md:col-start-9 md:col-end-12 md:pr-16 pb-4 md:pb-0 md:oder-2 order-1">
                 <img src="assets/img/me.png">
             </div>
         </div>
 
     </section>
 
-    <div class="about-placeholder bg-palette-500" id="about">
+    <div class="about-placeholder animate hid-right bg-palette-500" id="about">
         <!--Fill content using JQuery-->
     </div>
 
-    <div class="portfolio-placeholder bg-white text-palette-500" id="portfolio">
+    <div class="portfolio-placeholder animate hid-left bg-white text-palette-500" id="portfolio">
         <!--Fill content using JQuery-->
     </div>
 
-    <div class="contact-placeholder text-white bg-palette-500" id="contact">
+    <div class="contact-placeholder animate hid-right text-white bg-palette-500" id="contact">
         <!--Fill content using JQuery-->
     </div>
     <div class="footer text-center py-2">
