@@ -1022,6 +1022,10 @@ video {
   margin: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .nav-links ul li a {
   display: inline-block;
   position: relative;
@@ -1160,6 +1164,10 @@ video {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+
+.translate-right {
+  transform: translate(-100%);
 }
 
 .hover\:rotate-12:hover{
