@@ -125,6 +125,16 @@ html, body {
     }
 }
 
+.nav-links ul li:nth-child(2){
+    transition-delay: 200ms;
+}
+.nav-links ul li:nth-child(3){
+    transition-delay: 400ms;
+}
+.nav-links ul li:nth-child(4){
+    transition-delay: 600ms;
+}
+
 .proj-image {
     flex: 1;
 }
@@ -147,8 +157,4 @@ html, body {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
-}
-
-.translate-right {
-    transform: translate(-100%);
 }
