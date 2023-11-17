@@ -583,6 +583,11 @@ video {
   margin-bottom: 2rem;
 }
 
+.mx-5{
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -605,6 +610,10 @@ video {
 
 .mt-\[100px\]{
   margin-top: 100px;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
 }
 
 .block{
@@ -795,8 +804,21 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-palette-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 187 12 / var(--tw-bg-opacity));
+}
+
 .p-5{
   padding: 1.25rem;
+}
+
+.p-4{
+  padding: 1rem;
+}
+
+.p-2{
+  padding: 0.5rem;
 }
 
 .px-20{
@@ -976,6 +998,11 @@ video {
   color: rgb(30 64 175 / var(--tw-text-opacity));
 }
 
+.text-gray-200{
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
 .text-palette-300{
   --tw-text-opacity: 1;
   color: rgb(255 187 12 / var(--tw-text-opacity));
@@ -994,6 +1021,16 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-300{
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.text-gray-400{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -1090,7 +1127,7 @@ html, body {
   cursor: pointer;
   transform: scale(1.5);
   transition-timing-function: ease-in;
-  transition-duration: 300ms;
+  transition-duration: 200ms;
 }
 
 .github iconify-icon:hover{
