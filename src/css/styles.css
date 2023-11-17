@@ -640,8 +640,8 @@ video {
   width: 33.333333%;
 }
 
-.w-3\/5{
-  width: 60%;
+.w-2\/3{
+  width: 66.666667%;
 }
 
 .w-full{
@@ -1155,29 +1155,6 @@ html, body {
   background-color: #fcff627a;
 }
 
-@media only screen and (max-width: 600px) {
-  .ui-project, .frontend-wrapper {
-    display: block;
-  }
-
-  .frontend-project{
-    margin: 2rem 0rem 2rem 0rem;
-  }
-
-  .proj-wrapper{
-    width: 100%;
-    margin-top: 1em;
-  }
-
-  .proj-image{
-    justify-content: center;
-  }
-
-  .right-side{
-    justify-content: center;
-  }
-}
-
 .nav-links ul li:nth-child(2){
   transition-delay: 200ms;
 }
@@ -1244,6 +1221,46 @@ html, body {
   top: 0;
   right: 0;
   margin: 10px 30px 0 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .ui-project, .frontend-wrapper {
+    display: block;
+  }
+
+  .frontend-project{
+    margin: 2rem 0rem 2rem 0rem;
+  }
+
+  .proj-wrapper{
+    width: 100%;
+    margin-top: 1em;
+    padding: 0;
+  }
+
+  .proj-image{
+    justify-content: center;
+  }
+
+  .right-side{
+    justify-content: center;
+  }
+
+  .resume-type {
+    text-align: center;
+  }
+
+  .modal {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .close-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px 10px 0 0;
+  }
 }
 
 .hover\:rotate-12:hover{
@@ -1375,6 +1392,10 @@ html, body {
 
   .md\:hidden{
     display: none;
+  }
+
+  .md\:w-5\/12{
+    width: 41.666667%;
   }
 
   .md\:grid-cols-12{
