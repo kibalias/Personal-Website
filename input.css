@@ -171,6 +171,61 @@ html, body {
     margin: 10px 30px 0 0;
 }
 
+.news-ticker-container {
+    bottom: 0;
+    font-family: "Roboto", sans-serif;
+    box-shadow: 3px -2px 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.news-ticker-container .news-ticker-header {
+    position: absolute;
+    background: #df2020;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    color: white;
+    font-weight: bold;
+    z-index: 200;
+}
+
+.news-ticker-container ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    animation: scroll 35s infinite linear;
+}
+
+.news-ticker-container ul li {
+    white-space: nowrap;
+    padding: 5px 30px;
+    color: #494949;
+    position: relative;
+}
+
+.news-ticker-container ul li::after {
+    content:"";
+    width: 1px;
+    height: 100%;
+    background: #525252;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.news-ticker-container ul li:last-child::after {
+    display: none;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-2450px);
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .ui-project, .frontend-wrapper {
         display: block;
