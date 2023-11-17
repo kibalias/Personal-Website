@@ -94,8 +94,21 @@
                 <img src="assets/img/me.png">
             </div>
         </div>
-
     </section>
+
+    <!--Modal for resume-->
+    <dialog class="modal border-4 border-palette-500 w-3/5 p-8 z-10 drop-shadow-xl" id="modal">
+        <button class="close-modal">
+            <iconify-icon id="close-btn" icon="ion:close" width="35" class="cursor-pointer"></iconify-icon>
+        </button>
+        <h1 class="text-xl font-semibold text-center"> Select Resume </h1>
+        <div class="resume-type flex flex-wrap gap-4 justify-center p-8">
+            <a href="#">Frontend Developer</a>
+            <a href="#">Software Quality Assurance Analyst</a>
+            <a href="#">Data Analyst</a>
+            <a href="#">General Resume</a>
+        </div>
+    </dialog>
 
     <div class="about-placeholder animate hid-right bg-palette-500" id="about">
         <!--Fill content using JQuery-->
