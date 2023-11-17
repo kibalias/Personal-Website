@@ -18,7 +18,8 @@ module.exports = {
       }, 
       fontFamily: {
         'Poppins': ['Poppins'],
-        'Lilita': ['Lilita One']
+        'Lilita': ['Lilita One'],
+        'Playfair': ['Playfair Display']
         },
     },
   },

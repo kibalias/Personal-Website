@@ -9,25 +9,83 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="../../assets/img/logo.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script defer src="../js/animate.js"></script>
     <title>Mafumafu - Jan Nicole Casillan</title>
 </head>
 <body class="font-Poppins">
-    <div class="p-5 text-center">
-        <div class="proj-title text-3xl font-bold uppercase bg-palette-300">
-            Mafumafu Website Design
+    <header class="flex justify-between items-center md:mx-10 mx-2 px-5 py-4 text-palette-500" id="home">
+        <div class="logo">
+            <ul>
+                <li class="web-name font-bold font-Lilita text-3xl text-palette-300 tracking-widest animate hid-left"> nikojan </li>
+            </ul>
         </div>
-        <div class="text-sm px-8 md:px-16">
-            <div class="background text-gray-400 text-xl text-left my-2">
-                Background.
-                <span class="text-sm text-black">
-                    From my internship, we have been tasked to create a portfolio for a music artist that we listen to. I chose Mafumafu, a Japanese singer, vocalist, and lyricist. This website design is inspired by how mysterious, transcendal, or other wordly his songs seem to be or means. It also reflects the mysterious vibe he gives.
-                </span>
+
+        <div class="menu md:hidden block">
+            <iconify-icon id="menu-btn" icon="ion:menu" style="color: #ff942f;" width="50" class="cursor-pointer"></iconify-icon>
+
+        </div>
+        
+        <div id="mobile-menu" class="mobile-menu hidden top-0 right-0 z-10 bg-palette-200 pl-16 pt-2 pr-2 pb-8 rounded-bl-full ">
+            <div class="absolute z-20 top-0 right-0 pr-24 pt-2">
+                <iconify-icon id="close-btn" icon="ion:close" width="35" class="cursor-pointer"></iconify-icon>
             </div>
-            <div class="objective text-gray-400 text-xl text-left my-2">
-                Objective.
-                <span class="text-sm text-black">
-                    Redesign Mafumafu's portfolio or website while still maintaining the current web pages from his old website and update the content of website for his current or most popular song. 
-                </span>
+            <ul class="text-center">
+                <li class="font-semibold my-2">  
+                    <a href="../../index.html#landing-section">Home</a>
+                </li>
+                <li class="font-semibold my-2">
+                    <a href="../../index.html#about">About</a>
+                </li>
+                <li class="font-semibold my-2">
+                    <a href="../../index.html#portfolio">Portfolio</a>
+                </li>
+                <li class="font-semibold my-2">
+                    <a href="../../index.html#contact">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-links hidden md:block">
+            <ul class="flex gap-x-8">
+                <li class="font-semibold my-2 animate hid-left">
+                    <a href="../../index.html#landing-section">Home</a>
+                </li>
+                <li class="font-semibold my-2 animate hid-left">
+                    <a href="../../index.html#about">About</a>
+                </li>
+                <li class="font-semibold my-2 animate hid-left">
+                    <a href="../../index.html#portfolio">Portfolio</a>
+                </li>
+                <li class="font-semibold my-2 animate hid-left">
+                    <a href="../../index.html#contact">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="p-5 text-center">
+        <div class="md:flex md:gap-2 md:items-center">
+            <div class="text-sm px-4 md:px-16 md:w-3/5">
+                <div class="proj-title text-[3rem] font-Playfair text-left font-bold uppercase text-palette-100">
+                    MAFUMAFU
+                </div>
+                <div class="authors font-Playfair text-palette-100 text-3xl font-semibold text-left my-4">
+                    UI/UX Design / Individual (Jan Nicole Casillan)
+                </div>
+                <div class="background text-palette-100 text-xl text-left my-2">
+                    Background.
+                    <span class="text-sm text-black">
+                        From my internship, we have been tasked to create a portfolio for a music artist that we listen to. I chose Mafumafu, a Japanese singer, vocalist, and lyricist. This website design is inspired by how mysterious, transcendal, or other wordly his songs seem to be or means. It also reflects the mysterious vibe he gives.
+                    </span>
+                </div>
+                <div class="objective text-palette-100 text-xl text-left my-2">
+                    Objective.
+                    <span class="text-sm text-black">
+                        Redesign Mafumafu's portfolio or website while still maintaining the current web pages from his old website and update the content of website for his current or most popular song. 
+                    </span>
+                </div>
+            </div>
+            <div class="misc w-2/5 hidden md:block">
+                <img src="../../assets/img/mfmf/promotion.png" alt="Promotional-Paper" class="pb-8">
             </div>
         </div>
     </div>
@@ -59,21 +117,20 @@
             <img src="../../assets/img/mfmf/mob-schedule.png" alt="Mobile-Schedule-Page" class="pb-8">
         </div>
     </div>
-    <div class="wrapper w-full px-20">
+    <div class="wrapper w-full px-20 md:hidden">
         <h1 class="text-2xl font-Lilita uppercase">Miscellaneous</h1>
         <h1 class="text-xl font-Lilita">Promotional Material</h1>
         <img src="../../assets/img/mfmf/promotion.png" alt="Promotional-Paper" class="pb-8">
     </div>
 
-    <div class="mx-5 mb-4">
-        <div class="link justify-center items-center flex gap-2 bg-palette-300 py-2">
-            <iconify-icon icon="icon-park-solid:back" style="color: #c50;" width="30"></iconify-icon>
-            <a href="../../index.html" class="text-center text-white hover:text-red-800 underline">Back to Main Page</a>
+    <div class="mx-5 mb-4 mt-4">
+        <div class="link justify-center items-center flex gap-2 py-2">
+            <a href="../../index.html#portfolio" class="text-center p-4 border-2 border-palette-100 text-palette-500 hover:text-red-800 shadow-lg hover:shadow-xl">OTHER WORKS</a>
         </div>
     </div>
-   
     
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="../js/expand-work.js"></script>
     <script src="../js/load-pages.js"></script>
 </body>
 </html>
