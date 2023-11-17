@@ -158,3 +158,34 @@ html, body {
     filter: blur(0);
     transform: translateX(0);
 }
+
+.resume-type :is(a){
+    padding: 10px 30px 10px 30px;
+    background-color: white;
+    border-radius: 1.5rem;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #757575;
+}
+
+.resume-type :is(a):hover{
+    color: white;
+    background-color: rgba(108, 122, 137,1);
+}
+.modal{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal::backdrop{
+    background-color: rgba(237, 231, 255, 0.4);
+}
+
+.close-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px 30px 0 0;
+}
