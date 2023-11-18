@@ -30,11 +30,24 @@ close_menu.addEventListener('click', function(){
 //load portfolio pages
 function loadWork(val){
     console.log(val);
-    if(val == 1){
-        window.open('src/templates/mafumafu-interface-design.html');
+    var pagelinks = ['src/templates/projects/mafumafu-interface-design.html', 
+                    'src/templates/projects/kemrie-interface-design.html',
+                    'src/templates/projects/icbb-interface-design.html',
+                    'src/templates/misc/under-construction.html',
+                ]
+    try {
+        if(val != null){
+            window.open(pagelinks[val-1]);
+        }
+    }
+    catch {
+        alert('Non-existing or cannot locate page!');
+    }
+    /*if(val == 1){
+        window.open('src/templates/project/mafumafu-interface-design.html');
     } else {
         window.open('src/templates/misc/under-construction.html');
-    }
+    }*/
 }
 
 //redirect to github repository
