@@ -33,6 +33,7 @@ function loadWork(val){
     var pagelinks = ['src/templates/projects/mafumafu-interface-design.html', 
                     'src/templates/projects/kemrie-interface-design.html',
                     'src/templates/projects/icbb-interface-design.html',
+                    'src/templates/projects/alexandria-interface-design.html',
                     'src/templates/misc/under-construction.html',
                 ]
     try {
