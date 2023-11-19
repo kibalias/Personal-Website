@@ -120,6 +120,11 @@ html, body {
     flex: 1;
 }
 
+#btn-ui-proj {
+    display: flex;
+    align-items: center;
+}
+
 .animate {
     opacity: 0;
     filter: blur(5px);
@@ -257,4 +262,9 @@ html, body {
         right: 0;
         margin: 5px 10px 0 0;
     }
+    .technology{
+        flex-flow: wrap;
+        justify-content: center;
+    }
+
 }
