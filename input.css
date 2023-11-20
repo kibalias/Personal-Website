@@ -47,7 +47,6 @@ html, body {
 
 .title {
     text-align: center;
-    min-height: 100px;
     max-height: 200px;
 }
 
@@ -63,8 +62,10 @@ html, body {
     border-radius: 20px;
     border: 1px solid rgba(209, 209, 209, 0.486);
 }
+
 .proj-image-frontend img{
     box-shadow: 3px 3px 5px rgba(173, 173, 173, 0.651);
+    min-height: 256px;
 }
 
 .github {
@@ -237,6 +238,9 @@ html, body {
     }
     .frontend-project{
         margin: 2rem 0rem 2rem 0rem;
+    }
+    .proj-image-frontend img{
+        min-height: 128px;
     }
     .proj-wrapper{
         width: 100%;

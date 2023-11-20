@@ -65,5 +65,7 @@ function redirect_to_github(d){
         window.open('https://github.com/kibalias/PMMS');
     } else if(val=='alexandria'){
         window.open('https://github.com/kibalias/Alexandria');
+    } else {
+        window.open('src/templates/misc/404.html');
     }
 }
