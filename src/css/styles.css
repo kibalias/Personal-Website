@@ -4,6 +4,16 @@
 
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
+@import url('https://fonts.googleapis.com/css?family=Helvetica');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue');
+
 /*
 ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
@@ -1070,8 +1080,16 @@ video {
   text-align: justify;
 }
 
+.font-Bebas{
+  font-family: Bebas Neue;
+}
+
 .font-Lilita{
   font-family: Lilita One;
+}
+
+.font-OpenSans{
+  font-family: Open Sans;
 }
 
 .font-Playfair{
@@ -1095,6 +1113,11 @@ video {
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .text-\[3rem\]{
@@ -1131,10 +1154,6 @@ video {
 
 .uppercase{
   text-transform: uppercase;
-}
-
-.italic{
-  font-style: italic;
 }
 
 .leading-none{
@@ -1269,6 +1288,11 @@ html, body {
   box-shadow: 5px 5px 5px #b8b8b8;
   border-radius: 20px;
   border: 1px solid rgba(209, 209, 209, 0.486);
+}
+
+.proj-title {
+  font-family: 'Bebas Neue';
+  letter-spacing: 0.1em;
 }
 
 .proj-image-frontend img{
@@ -1773,6 +1797,11 @@ html, body {
 
   .md\:text-7xl{
     font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .md\:text-8xl{
+    font-size: 6rem;
     line-height: 1;
   }
 }

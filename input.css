@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css?family=Lilita+One');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Helvetica');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue');
 
 @tailwind base;
 @tailwind components;
@@ -61,6 +66,11 @@ html, body {
     box-shadow: 5px 5px 5px #b8b8b8;
     border-radius: 20px;
     border: 1px solid rgba(209, 209, 209, 0.486);
+}
+
+.proj-title {
+    font-family: 'Bebas Neue';
+    letter-spacing: 0.1em;
 }
 
 .proj-image-frontend img{
