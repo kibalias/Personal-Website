@@ -57,6 +57,13 @@ html, body {
 .title main-title{
     text-transform: uppercase;
     font-weight: bold;
+    font-family: 'Bebas Neue';
+    letter-spacing: 0.1em;
+    font-size: larger;
+}
+
+.title sub-title {
+    font-size: small;
 }
 
 .frontend-project {

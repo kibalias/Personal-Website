@@ -1274,6 +1274,13 @@ html, body {
 .title main-title{
   text-transform: uppercase;
   font-weight: bold;
+  font-family: 'Bebas Neue';
+  letter-spacing: 0.1em;
+  font-size: larger;
+}
+
+.title sub-title {
+  font-size: small;
 }
 
 .frontend-project {
@@ -1787,6 +1794,14 @@ html, body {
     width: 41.666667%;
   }
 
+  .lg\:w-\[20\%\]{
+    width: 20%;
+  }
+
+  .lg\:w-\[1\/2\]{
+    width: 1/2;
+  }
+
   .lg\:grid-cols-12{
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -1885,6 +1900,18 @@ html, body {
 @media (min-width: 1280px){
   .xl\:w-1\/3{
     width: 33.333333%;
+  }
+
+  .xl\:w-1\/2{
+    width: 50%;
+  }
+
+  .xl\:w-\[20\%\]{
+    width: 20%;
+  }
+
+  .xl\:w-\[30\%\]{
+    width: 30%;
   }
 
   .xl\:text-7xl{
