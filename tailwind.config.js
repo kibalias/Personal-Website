@@ -19,7 +19,12 @@ module.exports = {
       fontFamily: {
         'Poppins': ['Poppins'],
         'Lilita': ['Lilita One'],
-        'Playfair': ['Playfair Display']
+        'Playfair': ['Playfair Display'],
+        'Helvetica': ['Helvetica'],
+        'OpenSans': ['Open Sans'],
+        'Roboto': ['Roboto'],
+        'Lato': ['Lato'],
+        'Bebas': ['Bebas Neue']
         },
     },
   },
