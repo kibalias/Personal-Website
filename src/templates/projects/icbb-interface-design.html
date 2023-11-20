@@ -86,12 +86,19 @@
                 </div>
             </div>
             <div class="misc w-2/5 hidden md:block">
-                <div class="proj-image">
-                    <img src="../../../assets/img/i-cbb/start.png" class="absolute top-[13%] right-[20%] z-20 h-[70%]">
-                    <img src="../../../assets/img/i-cbb/main.png" class="absolute top-[25%] right-[8%] z-10 h-[70%] rotate-[20deg]"> 
-                    <div class=" mt-8 h-[400px] bg-gray-200 z-30"></div>
+                <div class="relative">
+                    <div class="flex">
+                        <img src="../../../assets/img/i-cbb/start.png" class="order-2 z-20 rotate-[20deg] w-1/2 -translate-x-16">
+                        <img src="../../../assets/img/i-cbb/main.png" class="order-1 z-10 w-1/2 -translate-y-4"> 
+                    </div>
+                    <div class="absolute h-[400px] w-full bg-gray-200 z-0 top-0 -translate-x-4"></div>
                 </div>
             </div>
+            <!--<div class="parent relative">
+                <img src="../../../assets/img/i-cbb/start.png" class="order-2 absolute z-20 w-1/2 rotate-[20deg]">
+                <img src="../../../assets/img/i-cbb/main.png" class="order-1 absolute z-10 w-1/2 "> 
+                <div class="h-[500px] w-full bg-gray-200 z-30"></div>
+            </div>-->
         </div>
     </div>
     
