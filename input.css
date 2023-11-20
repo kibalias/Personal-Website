@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css?family=Lilita+One');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
-@import url('https://fonts.googleapis.com/css?family=Helvetica');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Lato');
@@ -242,7 +241,8 @@ html, body {
     }
 }
 
-@media only screen and (max-width: 600px) {
+/* Small Devices */
+@media only screen and (max-device-width: 480px){
     .ui-project, .frontend-wrapper {
         display: block;
     }
@@ -280,5 +280,30 @@ html, body {
         flex-flow: wrap;
         justify-content: center;
     }
+}
 
+/* Tablet */
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .ui-project {
+        display: grid;
+    }
+    .right-side, .proj-image {
+        justify-content: center;
+    }
+    .home-placeholder, .ui-project, .frontend-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .proj-wrapper {
+        width: 100%;
+        margin: 1em 0 1em 0;
+    }
+    .title {
+        min-height: 100px;
+    }
+}
+
+@media only screen and (min-device-width: 769px) {
+    .right-side, .proj-image {
+        justify-content: center;
+    }
 }
