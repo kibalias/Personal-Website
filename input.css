@@ -184,11 +184,25 @@ html, body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    transition: opacity 0.5s;
 }
 
 .modal::backdrop{
     background-color: rgba(237, 231, 255, 0.4);
 }
+
+dialog[open] {
+    animation: fadein 0.2s ease-in-out;
+  }
+  
+  @keyframes fadein{
+    0%{
+      opacity:0;
+    }
+    100%{
+      opacity:1;
+    }
+  }
 
 .close-modal {
     position: absolute;
