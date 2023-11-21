@@ -312,9 +312,13 @@ dialog[open] {
     .ui-project {
         display: grid;
     }
-    .right-side, .proj-image {
+    .proj-image {
         justify-content: center;
     }
+    .right-side {
+        justify-content: end;
+    }
+
     .home-placeholder, .ui-project, .frontend-wrapper {
         grid-template-columns: 1fr;
     }
@@ -324,6 +328,13 @@ dialog[open] {
     }
     .title {
         min-height: 100px;
+    }
+
+    .home-placeholder .left-side{
+        order: 1;
+    }
+    .home-placeholder .right-side{
+        order: 2;
     }
 }
 
