@@ -6,12 +6,14 @@
   "scripts": {
     "build": "tailwindcss -i ./input.css -o ./src/css/styles.css",
     "watch": "tailwindcss -i ./input.css -o ./src/css/styles.css --watch"
-
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "boxicons": "^2.1.4"
   }
 }

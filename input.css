@@ -54,10 +54,14 @@ html, body {
 }
 
 .title {
-    text-align: center;
-    max-height: 200px;
+    padding-top: 2em;
+    text-align: left;
+    font-family: 'Bebas Neue';
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    color: #FFBB0C;
 }
-
+/*
 .title main-title{
     text-transform: uppercase;
     font-weight: bold;
@@ -69,6 +73,7 @@ html, body {
 .title sub-title {
     font-size: small;
 }
+*/
 
 .frontend-project {
     background-color: #fcfcfc;
@@ -76,6 +81,43 @@ html, body {
     box-shadow: 5px 5px 5px #b8b8b8;
     border-radius: 20px;
     border: 1px solid rgba(209, 209, 209, 0.486);
+}
+
+/* Development Project Display Grid */
+.dev-project{
+    position: relative;
+    overflow: hidden;
+}
+.dev-project img {
+    display: block;
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+}
+
+.dev-project .dev-project-about {
+    padding: 10px 15px 10px 15px;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(53, 53, 53, 0.5);
+}
+
+.dev-project > img,
+.dev-project > .dev-project-about {
+    transition: ease-in-out 200ms;
+}
+
+.dev-project:hover > img.blurry {
+    filter: blur(5px);
+    transform: scale(1.1);
+}
+
+.dev-project > .dev-project-about.fade {
+    opacity: 0;
+}
+.dev-project:hover > .dev-project-about.fade {
+    opacity: 1;
 }
 
 .proj-title {
