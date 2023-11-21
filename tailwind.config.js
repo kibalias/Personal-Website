@@ -14,7 +14,13 @@ module.exports = {
           400: '#964E0B',
           500: '#6B3706',
           600: '#383838'
-        }
+        },
+      'earth': {
+        100: '#e5cabb',
+        200: '#c49e8a',
+        300: '#8e614d',
+        400: '#5e5343'
+      }
       }, 
       fontFamily: {
         'Poppins': ['Poppins'],
