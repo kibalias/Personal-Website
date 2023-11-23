@@ -13,55 +13,66 @@
     <title>Mafumafu - Jan Nicole Casillan</title>
 </head>
 <body class="font-Poppins">
-    <header class="flex justify-between items-center md:mx-10 mx-2 px-5 py-4 text-palette-500" id="home">
-        <div class="logo">
-            <ul>
-                <li class="web-name font-extrabold font-Poppins text-3xl text-palette-300 animate hid-left tracking-widest"> n<span>iko</span>j<span>an</span>. </li>
-            </ul>
-        </div>
-
-        <div class="menu md:hidden block">
-            <iconify-icon id="menu-btn" icon="ion:menu" style="color: #ff942f;" width="50" class="cursor-pointer"></iconify-icon>
-
-        </div>
-        
-        <div id="mobile-menu" class="mobile-menu hidden top-0 right-0 z-10 bg-palette-200 pl-16 pt-2 pr-2 pb-8 rounded-bl-full ">
-            <div class="absolute z-20 top-0 right-0 pr-24 pt-2">
-                <iconify-icon id="close-btn" icon="ion:close" width="35" class="cursor-pointer"></iconify-icon>
+    <header class="text-palette-500 z-10 bg-white" id="navigation">
+        <nav class="flex justify-between items-center md:mx-10 mx-2 px-5 py-4">
+            <div class="logo">
+                <ul>
+                    <li class="web-name font-extrabold font-Poppins text-3xl text-palette-300 animate hid-left tracking-widest"> n<span>iko</span>j<span>an</span>. </li>
+                </ul>
             </div>
-            <ul class="text-center">
-                <li class="font-semibold my-2">  
-                    <a href="../../../index.html#landing-section">Home</a>
-                </li>
-                <li class="font-semibold my-2">
-                    <a href="../../../index.html#about">About</a>
-                </li>
-                <li class="font-semibold my-2">
-                    <a href="../../../index.html#portfolio">Portfolio</a>
-                </li>
-                <li class="font-semibold my-2">
-                    <a href="../../../index.html#contact">Contact Me</a>
-                </li>
-            </ul>
-        </div>
+    
+            <!--MOBILE MENU-->
+            <div class="mobile-btn md:hidden" id="mobile-btn">
+                <div class="bar">
+                </div>
+            </div>
 
-        <div class="nav-links hidden md:block">
-            <ul class="flex gap-x-8">
-                <li class="font-semibold my-2 animate hid-left">
-                    <a href="../../../index.html#landing-section">Home</a>
-                </li>
-                <li class="font-semibold my-2 animate hid-left">
-                    <a href="../../../index.html#about">About</a>
-                </li>
-                <li class="font-semibold my-2 animate hid-left">
-                    <a href="../../../index.html#portfolio">Portfolio</a>
-                </li>
-                <li class="font-semibold my-2 animate hid-left">
-                    <a href="../../../index.html#contact">Contact Me</a>
-                </li>
-            </ul>
-        </div>
+            <div class="nav-links hidden md:block">
+                <ul class="flex gap-x-8">
+                    <li class="font-semibold my-2 animate hid-left">
+                        <a href="../../../index.html#landing-section">Home</a>
+                    </li>
+                    <li class="font-semibold my-2 animate hid-left">
+                        <a href="../../../index.html#about">About</a>
+                    </li>
+                    <li class="font-semibold my-2 animate hid-left">
+                        <a href="../../../index.html#portfolio">Portfolio</a>
+                    </li>
+                    <li class="font-semibold my-2 animate hid-left">
+                        <a href="../../../index.html#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
+
+    <!--Mobile Menu-->
+    <div class="mobile-menu grid absolute h-[400px] w-full z-0" id="mobile-menu">
+        <ul class="text-center">
+            <li class="font-semibold mb-8 tracking-widest">  
+                <a href="../../../index.html#landing-section">Home</a>
+            </li>
+            <li class="font-semibold my-8 tracking-widest">
+                <a href="../../../index.html#about">About</a>
+            </li>
+            <li class="font-semibold my-8 tracking-widest">
+                <a href="../../../index.html#portfolio">Portfolio</a>
+            </li>
+            <li class="font-semibold my-8 tracking-widest">
+                <a href="../../../index.html#contact">Contact Me</a>
+            </li>
+            <li class="flex gap-2">
+                <button class="mobile-menu-logo flex justify-center items-center gap-2 text-sm text-white border border-white p-2 rounded-xl bg-gray-600 hover:bg-[#FFBB0C]">
+                    <iconify-icon icon="bxl:github" width="2em" class="hover:text-gray-700 text-[#f3f3f3]"></iconify-icon>
+                   
+                </button>
+                <button class="mobile-menu-logo flex justify-center items-center gap-2 text-sm text-white border border-white p-2 rounded-xl bg-gray-600 hover:bg-[#FFBB0C]">
+                    <iconify-icon icon="bxl:linkedin-square" class="hover:text-gray-700 text-[#f3f3f3]" width="2em"></iconify-icon>
+                </button>
+            </li>
+        </ul>
+    </div>
+
     <div class="p-5 text-center">
         <div class="md:flex md:gap-2 md:items-center grid grid-cols-1">
             <div class="text-sm px-4 md:px-16 md:w-3/5 md:order-1 order-2">
@@ -141,7 +152,7 @@
     </div>
     
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script src="../../js/expand-work.js"></script>
+    <script src="../../js/main.js"></script>
     <script src="../../js/load-pages.js"></script>
 </body>
 </html>

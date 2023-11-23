@@ -1245,6 +1245,11 @@ video {
   letter-spacing: 0.1em;
 }
 
+.text-\[\#f3f3f3\]{
+  --tw-text-opacity: 1;
+  color: rgb(243 243 243 / var(--tw-text-opacity));
+}
+
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1353,6 +1358,90 @@ html, body {
   transform-origin: bottom left;
 }
 
+/* Hamburger Menu */
+
+.mobile-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 50px;
+  transform-origin: center;
+  cursor: pointer;
+}
+
+.mobile-btn .bar {
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background-color: #525252;
+  border-radius: 10px;
+  transition: all .5s ease-in-out;
+}
+
+.mobile-btn .bar::before,
+  .mobile-btn .bar::after
+   {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background-color: #ffce2c;
+  border-radius: 10px;
+  transition: all .5s ease-in-out;
+}
+
+.mobile-btn .bar::before{
+  transform: translateY(-10px);
+}
+
+.mobile-btn .bar::after{
+  transform: translateY(10px);
+}
+
+.mobile-btn.mobile-open .bar{
+  background: transparent;
+}
+
+.mobile-btn.mobile-open .bar::before {
+  transform: rotate(45deg);
+}
+
+.mobile-btn.mobile-open .bar::after {
+  background-color: #525252;
+  transform: rotate(-45deg);
+}
+
+/* End of hamburger menu */
+
+/* Mobile-Menu */
+
+.mobile-menu {
+  background-color: rgba(59, 59, 59, 0.9);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 5px;
+  transform: translateY(-120%);
+  transition: all 1s ease;
+}
+
+.mobile-menu.opened {
+  transform: translateY(0%);
+  transition: all 1s ease;
+}
+
+.mobile-menu.opened ul li {
+  transition: all .5s ease-in-out;
+}
+
+.mobile-menu ul li:hover {
+  color: #FFBB0C;
+}
+
+/*End of Mobile Menu */
+
 .ui-project {
   display: flex;
 }
@@ -1365,20 +1454,6 @@ html, body {
   letter-spacing: 0.05em;
   color: #FFBB0C;
 }
-
-/*
-.title main-title{
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: 'Bebas Neue';
-    letter-spacing: 0.1em;
-    font-size: larger;
-}
-
-.title sub-title {
-    font-size: small;
-}
-*/
 
 .frontend-project {
   background-color: #fcfcfc;
@@ -1780,6 +1855,11 @@ dialog[open] {
 .hover\:text-gray-100:hover{
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
+.hover\:text-gray-700:hover{
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .hover\:text-red-800:hover{
